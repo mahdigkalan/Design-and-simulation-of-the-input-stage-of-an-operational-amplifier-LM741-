@@ -1,0 +1,17 @@
+* PSpice Model Editor - Version 9.2
+
+*$
+.model Q2N3120	PNP(Is=3E-15 Xti=3 Eg=1.11 Vaf=50 Bf=100 Ne=1.829
++		Ise=211.4f Ikf=1.079 Xtb=1.5 Br=4.32 Nc=2 Isc=0 Ikr=0 Rc=150
++		Cjc=1p Mjc=.5383 Vjc=.75 Fc=.5 Cje=0.1p Mje=.3357 Vje=.75
++		Tr=122n Tf=27n Itf=.65 Vtf=5 Xtf=1.7 Rb=500)
+*		National	pid=63		case=TO5
+*		88-09-09 bam	creation
+*$
+.model Q2N3115	NPN(Is=1E-15 Xti=3 Eg=1.11 Vaf=200 Bf=200 Ne=1.236
++		Ise=1E-15 Ikf=.2524 Xtb=1.5 Br=7.134 Nc=2 Isc=0 Ikr=0 Rc=300
++		Cjc=0.35p Mjc=.3416 Vjc=.75 Fc=.5 Cje=0.65p Mje=.377 Vje=.75
++		Tr=50.96n Tf=1.1n Itf=.6 Vtf=1.7 Xtf=3 Rb=650)
+*		National	pid=19		case=TO18
+*		88-09-07 bam	creation
+*$

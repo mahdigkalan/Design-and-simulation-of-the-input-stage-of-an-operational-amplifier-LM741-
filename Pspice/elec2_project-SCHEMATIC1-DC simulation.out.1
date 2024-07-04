@@ -1,0 +1,62 @@
+
+**** 04/07/24 15:45:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-DC simulation"  [ D:\SUT\Electronic 2\Pspice\elec2_project-schematic1-dc simulation.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec2_project-schematic1-dc simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3ms 0 0.00001 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec2_project-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec2_project-SCHEMATIC1.net ****
+* source ELEC2_PROJECT
+Q_Q4         N07746 N07347 N065322 Q2N3120
+Q_Q2         N08581 N09682 N065322 Q2N3115
+Q_Q11         N07898 N07898 N08817 Q2N3120
+Q_Q3         N07390 N07347 N065662 Q2N3120
+V_V2         N09721 0  
++PULSE 0 1 1m 0.5m 0.5m 1m 3m
+Q_Q1         N08581 N09721 N065662 Q2N3115
+Q_Q5         N07390 N07390 N066002 Q2N3115
+R_R1         N08749 N066342  800  
+Q_Q6         N07746 N07390 N066342 Q2N3115
+Q_Q7         N08581 N08581 N08817 Q2N3120
+R_R2         N08749 N066002  800  
+V_VCC         N08817 0 15Vdc
+R_R3         N08749 N064982  8k  
+V_VEE         0 N08749 15Vdc
+R_R4         N07789 N07898  75k  
+Q_Q8         N07347 N08581 N08817 Q2N3120
+Q_Q10         N07789 N07789 N08749 Q2N3115
+V_V2         0 N09682  
+$
+ERROR -- Name "V_V2" is defined more than once
++PULSE 0 1 1m 0.5m 0.5m 1m 3m
+R_R6         0 N07746  1000k  
+---------------$
+ERROR -- Expecting keyword STIMULUS, saw N07746.
+
+Q_Q9         N07347 N07789 N064982 Q2N3115
+
+**** RESUMING "elec2_project-schematic1-dc simulation.sim.cir" ****
+.END
+

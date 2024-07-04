@@ -1,0 +1,100 @@
+
+**** 04/07/24 16:26:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-DC simulation"  [ D:\SUT\Electronic 2\Pspice\elec2_project-schematic1-dc simulation.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "elec2_project-schematic1-dc simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 0 1m 0.00001 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\elec2_project-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING elec2_project-SCHEMATIC1.net ****
+* source ELEC2_PROJECT
+Q_Q4         N07746 N07347 N065322 Q2N3120
+Q_Q2         N08581 N09682 N065322 Q2N3115
+Q_Q11         N07898 N07898 N08817 Q2N3120
+Q_Q3         N07390 N07347 N065662 Q2N3120
+Q_Q1         N08581 N09721 N065662 Q2N3115
+V_V4         0 N09682 DC 0Vdc AC 1Vac 
+Q_Q5         N07390 N07390 N066002 Q2N3115
+R_R1         N08749 N066342  800  
+Q_Q6         N07746 N07390 N066342 Q2N3115
+Q_Q7         N08581 N08581 N08817 Q2N3120
+R_R2         N08749 N066002  800  
+V_VCC         N08817 0 15Vdc
+R_R3         N08749 N064982  8k  
+V_VEE         0 N08749 15Vdc
+R_R4         N07789 N07898  75k  
+Q_Q8         N07347 N08581 N08817 Q2N3120
+Q_Q10         N07789 N07789 N08749 Q2N3115
+R_R6         0 N07746  1000k  
+Q_Q9         N07347 N07789 N064982 Q2N3115
+V_V3         N09721 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING "elec2_project-schematic1-dc simulation.sim.cir" ****
+.END
+
+**** 04/07/24 16:26:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-DC simulation"  [ D:\SUT\Electronic 2\Pspice\elec2_project-schematic1-dc simulation.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3120         Q2N3115         
+               PNP             NPN             
+          IS  650.600000E-18   14.340000E-15 
+          BF   60.06          118.6          
+          NF    1               1            
+         VAF  115.7            74.03         
+         IKF    1.079            .2524       
+         ISE  211.400000E-15   14.340000E-15 
+          NE    1.829           1.236        
+          BR    4.32            7.134        
+          NR    1               1            
+          RB   10              10            
+          RC     .715           1            
+         CJE   19.820000E-12   22.010000E-12 
+         MJE     .3357           .377        
+         CJC   14.760000E-12    7.306000E-12 
+         MJC     .5383           .3416       
+          TF  761.300000E-12  410.300000E-12 
+         XTF    1.7             3            
+         VTF    5               1.7          
+         ITF     .65             .6          
+          TR  122.000000E-09   50.960000E-09 
+         XTB    1.5             1.5          
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

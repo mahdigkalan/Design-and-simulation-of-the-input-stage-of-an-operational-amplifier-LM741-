@@ -1,0 +1,119 @@
+@OrCAD Simulation Server Version: 1.0
+
+@Settings: 1 1
+@General:
+ProfileName= "DC simulation" 
+ProfileFile= "elec2_project-schematic1-dc simulation.sim" 
+DesignFile= "elec2_project.dsn" 0 
+ProjectFile= "Elec2_Project.opj" 
+NetlistFile= "elec2_project-schematic1-dc simulation.sim.cir" 
+RootSchematics= "SCHEMATIC1" 
+DataFile= "elec2_project-SCHEMATIC1-DC simulation.dat" 
+OutFile= "elec2_project-SCHEMATIC1-DC simulation.out" 
+Notes=
+@#$BEGINNOTES
+@#$ENDNOTES
+@End General
+@Analysis: 0 0
++0 0 0 
++0 "3ms" 
++1 "" 
++2 "0" 
++3 "0.00001" 
++4 "" 
++5 "" 
++6 "" 
+@End Analysis
+@Analysis: 1 0
++2 0 0
++0 "1000" 
++1 "0.1" 
++2 "20000k" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 2 1
++0 0
++0 "V3" 
++1 "" 
++2 "" 
++3 "" 
++4 "0" 
++5 "1m" 
++6 "0.00001" 
++7 "" 
+@End Analysis
+@Analysis: 3 0
++1 1 1
++0 "V(R6:2)" 
++1 "V(R6:2)" 
++2 "V3" 
+@End Analysis
+@Analysis: 4 0
++0 0 1 0 0 0 1 0 
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 5 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 6 0
++1 
++0 "" 
+@End Analysis
+@Analysis: 7 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 8 0
++0 
++0 "D:\SUT\Electronic 2\Bias.txt" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 9 0
++0 "" 
+@End Analysis
+@Analysis: 10 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 11 1
++ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+@End Analysis
+@Analysis: 12 0
++1118480 0
+@End Analysis
+@Analysis: 13 1
++0 1 1 0
+@End Analysis
